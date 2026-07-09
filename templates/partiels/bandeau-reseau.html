@@ -1,0 +1,29 @@
+<!-- Bandeau réseau : tableau de bord discret, en tête de toutes les pages.
+     Le test de débit (débit, IP, FAI) est la SEULE API réelle du site. -->
+<div class="bandeau-reseau">
+  <div class="inner">
+    <span style="display: inline-flex; align-items: center; gap: 7px;">
+      <span class="pastille"></span>
+      <span class="titre-reseau">RÉSEAU</span>
+    </span>
+    <span class="groupe">
+      <span class="etiquette">Débit</span>
+      <span class="valeur mono" data-debit>{{site.reseau.debitMbps}} Mbps</span>
+    </span>
+    <span class="groupe">
+      <span class="etiquette">IP</span>
+      <span class="valeur mono">{{site.reseau.ip}}</span>
+    </span>
+    <span class="groupe">
+      <span class="etiquette">FAI</span>
+      <span class="valeur">{{site.reseau.fai}}</span>
+    </span>
+    <span class="groupe">
+      <span class="etiquette">Localisation</span>
+      <span class="valeur">{{site.reseau.localisation}}</span>
+    </span>
+    <span class="spacer"></span>
+    <button class="relancer" data-relancer title="Relancer le test">↻</button>
+    <a class="lien-normal" href="index.html?q=Mon débit est-il normal ?">Est-ce normal&nbsp;? →</a>
+  </div>
+</div>

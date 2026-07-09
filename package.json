@@ -1,0 +1,9 @@
+{
+  "name": "internet-fr",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Internet.fr — générateur de site statique (Node natif, zéro dépendance)",
+  "scripts": {
+    "build": "node build.js"
+  }
+}

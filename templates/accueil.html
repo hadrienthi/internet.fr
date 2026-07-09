@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{site.nom}} — L'Expert Internet</title>
+  <meta name="description" content="{{site.baseline}} Connexion, Wi-Fi, email, QR code, VPN, adresse IP : l'Expert Internet répond en langage clair.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+  {{> bandeau-reseau}}
+  {{> entete}}
+
+  <!-- ═══ Hero ═══ -->
+  <section class="hero">
+    <div>
+      <h1>Toutes vos questions sur Internet.<br><em>Une seule adresse.</em></h1>
+      <p>Connexion lente, Wi-Fi capricieux, email piraté, QR code, VPN, adresse IP&nbsp;: l'Expert Internet vous répond en langage clair, étape par étape. Une IA spécialisée, gratuite et sans inscription.</p>
+    </div>
+    {{> mascotte}}
+  </section>
+
+  <!-- ═══ L'Expert Internet ═══ -->
+  <section id="expert" class="section" style="padding-top: 44px;">
+    {{> chat}}
+  </section>
+
+  <!-- ═══ Les grands dossiers ═══ -->
+  <section id="dossiers" class="section" style="padding-top: 80px;">
+    <h2>Les grands dossiers</h2>
+    <p class="sous-titre">Quatre sujets concentrent l'essentiel des recherches. Chacun a sa page dédiée&nbsp;: un guide complet, relié aux fiches et à l'Expert.</p>
+    <div class="grille colonnes-4">
+      <!--BEGIN dossier-->
+      <a class="carte" href="{{href}}" data-slug="{{id}}">
+        <span class="question" style="font-size: 23px;">{{titre}}</span>
+        <span class="url">{{slug}}</span>
+        <span class="theme" style="text-transform: none; letter-spacing: 0; font-size: 12.5px;">{{stat}}</span>
+      </a>
+      <!--END dossier-->
+    </div>
+  </section>
+
+  <!-- ═══ Les questions les plus posées (maillage interne) ═══ -->
+  <section id="questions" class="section" style="padding-bottom: 32px;">
+    <h2>Les questions les plus posées</h2>
+    <p class="sous-titre">4&nbsp;416 questions d'internautes analysées. Les 100 plus fréquentes ont chacune leur page dédiée, reliée à l'Expert.</p>
+    <div class="grille colonnes-3">
+      <!--BEGIN question-->
+      <a class="carte" href="{{href}}" data-slug="{{slug}}">
+        <span class="theme">{{theme}}</span>
+        <span class="question">{{q}}</span>
+        <span class="url">/{{slug}}</span>
+      </a>
+      <!--END question-->
+    </div>
+    <p class="note-pointue">Sujets pointus (SSL, hébergement web, WHOIS, DNS avancé…)&nbsp;: pas de page ni d'outil dédié — <a href="#expert" data-prefill="C'est quoi un certificat SSL ?">l'Expert les résout en langage naturel</a>.</p>
+  </section>
+
+  {{> pied}}
+
+  <script>
+    window.__DONNEES_RESEAU__ = {{{reseauJson}}};
+    window.__QUESTIONS_PAR_SLUG__ = {{{questionsParSlugJson}}};
+  </script>
+  <script src="assets/expert.js"></script>
+</body>
+</html>

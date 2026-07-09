@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Internet.fr — L'Expert Internet</title>
+  <meta name="description" content="Toutes vos questions sur Internet. Une seule adresse. Connexion, Wi-Fi, email, QR code, VPN, adresse IP : l'Expert Internet répond en langage clair.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+  <!-- Bandeau réseau : tableau de bord discret, en tête de toutes les pages.
+     Le test de débit (débit, IP, FAI) est la SEULE API réelle du site. -->
+<div class="bandeau-reseau">
+  <div class="inner">
+    <span style="display: inline-flex; align-items: center; gap: 7px;">
+      <span class="pastille"></span>
+      <span class="titre-reseau">RÉSEAU</span>
+    </span>
+    <span class="groupe">
+      <span class="etiquette">Débit</span>
+      <span class="valeur mono" data-debit>487 Mbps</span>
+    </span>
+    <span class="groupe">
+      <span class="etiquette">IP</span>
+      <span class="valeur mono">92.174.13.58</span>
+    </span>
+    <span class="groupe">
+      <span class="etiquette">FAI</span>
+      <span class="valeur">Free</span>
+    </span>
+    <span class="groupe">
+      <span class="etiquette">Localisation</span>
+      <span class="valeur">Paris</span>
+    </span>
+    <span class="spacer"></span>
+    <button class="relancer" data-relancer title="Relancer le test">↻</button>
+    <a class="lien-normal" href="index.html?q=Mon débit est-il normal ?">Est-ce normal&nbsp;? →</a>
+  </div>
+</div>
+
+  <!-- En-tête commun -->
+<header class="entete">
+  <a class="logo" href="index.html">INTERNET.FR</a>
+  <nav>
+    <a href="index.html#expert">L'Expert</a>
+    <a href="index.html#dossiers">Dossiers</a>
+    <a href="index.html#questions">Questions</a>
+    <span class="badge-en-ligne"><span class="pastille"></span>Expert en ligne</span>
+  </nav>
+</header>
+
+
+  <!-- ═══ Hero ═══ -->
+  <section class="hero">
+    <div>
+      <h1>Toutes vos questions sur Internet.<br><em>Une seule adresse.</em></h1>
+      <p>Connexion lente, Wi-Fi capricieux, email piraté, QR code, VPN, adresse IP&nbsp;: l'Expert Internet vous répond en langage clair, étape par étape. Une IA spécialisée, gratuite et sans inscription.</p>
+    </div>
+    <!-- Mascotte .FR — signature graphique -->
+<div class="mascotte">
+  <div class="colonne">
+    <div class="colonne">
+      <div class="antenne-boule"></div>
+      <div class="antenne-tige"></div>
+    </div>
+    <div class="tete">
+      <div class="oeil"></div>
+      <div class="oeil"></div>
+    </div>
+    <div class="cou"></div>
+    <div class="corps"><span>.FR</span></div>
+    <div class="ombre"></div>
+  </div>
+</div>
+
+  </section>
+
+  <!-- ═══ L'Expert Internet ═══ -->
+  <section id="expert" class="section" style="padding-top: 44px;">
+    <!-- Module de chat « L'Expert Internet » — unique, modifié ici seulement -->
+<div class="carte-chat">
+  <div class="barre">
+    <div class="gauche">
+      <div class="avatar"><span></span><span></span></div>
+      <span class="nom">L'Expert Internet</span>
+    </div>
+    <span class="session">session sécurisée · IA spécialisée</span>
+  </div>
+
+  <div class="messages" data-chat-messages>
+    <div class="message bot">
+      <div class="bulle">Bonjour ! Je suis l'Expert Internet. Connexion, Wi-Fi, sécurité, email, QR code, VPN… posez-moi n'importe quelle question liée à Internet.</div>
+    </div>
+  </div>
+
+  <div class="saisie">
+    <div class="ligne-saisie">
+      <input type="text" data-chat-input placeholder="Votre question sur Internet…">
+      <button class="bouton-bleu" data-chat-send>Poser ma question</button>
+    </div>
+    <div class="puces">
+      <button class="puce" data-chat-suggestion>Pourquoi ma connexion est-elle lente ?</button>
+      <button class="puce" data-chat-suggestion>Comment scanner un QR code ?</button>
+      <button class="puce" data-chat-suggestion>Mon email a-t-il été piraté ?</button>
+      <button class="puce" data-chat-suggestion>À quoi sert un VPN ?</button>
+      <button class="puce" data-chat-suggestion>C'est quoi un certificat SSL ?</button>
+    </div>
+    <p class="avertissement">⚠ Ne saisissez jamais de mots de passe, coordonnées bancaires ou informations sensibles dans vos échanges.</p>
+  </div>
+</div>
+
+  </section>
+
+  <!-- ═══ Les grands dossiers ═══ -->
+  <section id="dossiers" class="section" style="padding-top: 80px;">
+    <h2>Les grands dossiers</h2>
+    <p class="sous-titre">Quatre sujets concentrent l'essentiel des recherches. Chacun a sa page dédiée&nbsp;: un guide complet, relié aux fiches et à l'Expert.</p>
+    <div class="grille colonnes-4">
+      
+      <a class="carte" href="email.html" data-slug="email">
+        <span class="question" style="font-size: 23px;">Email</span>
+        <span class="url">/email</span>
+        <span class="theme" style="text-transform: none; letter-spacing: 0; font-size: 12.5px;">620 questions couvertes</span>
+      </a>
+      
+      <a class="carte" href="qr-code.html" data-slug="qr-code">
+        <span class="question" style="font-size: 23px;">QR code</span>
+        <span class="url">/qr-code</span>
+        <span class="theme" style="text-transform: none; letter-spacing: 0; font-size: 12.5px;">540 questions couvertes</span>
+      </a>
+      
+      <a class="carte" href="vpn.html" data-slug="vpn">
+        <span class="question" style="font-size: 23px;">VPN</span>
+        <span class="url">/vpn</span>
+        <span class="theme" style="text-transform: none; letter-spacing: 0; font-size: 12.5px;">480 questions couvertes</span>
+      </a>
+      
+      <a class="carte" href="adresse-ip.html" data-slug="adresse-ip">
+        <span class="question" style="font-size: 23px;">Adresse IP</span>
+        <span class="url">/adresse-ip</span>
+        <span class="theme" style="text-transform: none; letter-spacing: 0; font-size: 12.5px;">410 questions couvertes</span>
+      </a>
+      
+    </div>
+  </section>
+
+  <!-- ═══ Les questions les plus posées (maillage interne) ═══ -->
+  <section id="questions" class="section" style="padding-bottom: 32px;">
+    <h2>Les questions les plus posées</h2>
+    <p class="sous-titre">4&nbsp;416 questions d'internautes analysées. Les 100 plus fréquentes ont chacune leur page dédiée, reliée à l'Expert.</p>
+    <div class="grille colonnes-3">
+      
+      <a class="carte" href="pourquoi-mon-internet-est-lent.html" data-slug="pourquoi-mon-internet-est-lent">
+        <span class="theme">Débit &amp; connexion</span>
+        <span class="question">Pourquoi mon Internet est-il lent ?</span>
+        <span class="url">/pourquoi-mon-internet-est-lent</span>
+      </a>
+      
+      <a class="carte" href="mon-email-a-t-il-ete-pirate.html" data-slug="mon-email-a-t-il-ete-pirate">
+        <span class="theme">Email</span>
+        <span class="question">Mon email a-t-il été piraté ?</span>
+        <span class="url">/mon-email-a-t-il-ete-pirate</span>
+      </a>
+      
+      <a class="carte" href="comment-trouver-mon-adresse-ip.html" data-slug="comment-trouver-mon-adresse-ip">
+        <span class="theme">Adresse IP</span>
+        <span class="question">Comment trouver mon adresse IP ?</span>
+        <span class="url">/comment-trouver-mon-adresse-ip</span>
+      </a>
+      
+      <a class="carte" href="wifi-connecte-mais-pas-internet.html" data-slug="wifi-connecte-mais-pas-internet">
+        <span class="theme">Débit &amp; connexion</span>
+        <span class="question">Wi-Fi connecté mais pas d'accès Internet : que faire ?</span>
+        <span class="url">/wifi-connecte-mais-pas-internet</span>
+      </a>
+      
+      <a class="carte" href="comment-scanner-un-qr-code.html" data-slug="comment-scanner-un-qr-code">
+        <span class="theme">QR code</span>
+        <span class="question">Comment scanner un QR code ?</span>
+        <span class="url">/comment-scanner-un-qr-code</span>
+      </a>
+      
+      <a class="carte" href="a-quoi-sert-un-vpn.html" data-slug="a-quoi-sert-un-vpn">
+        <span class="theme">VPN</span>
+        <span class="question">À quoi sert un VPN ?</span>
+        <span class="url">/a-quoi-sert-un-vpn</span>
+      </a>
+      
+    </div>
+    <p class="note-pointue">Sujets pointus (SSL, hébergement web, WHOIS, DNS avancé…)&nbsp;: pas de page ni d'outil dédié — <a href="#expert" data-prefill="C'est quoi un certificat SSL ?">l'Expert les résout en langage naturel</a>.</p>
+  </section>
+
+  <!-- Pied de page commun -->
+<footer class="pied">
+  <span class="logo-pied">INTERNET.FR</span>
+  <nav>
+    <a href="#">Mentions légales &amp; RGPD</a>
+    <a href="#">Cookies</a>
+    <a href="#">Contact</a>
+  </nav>
+</footer>
+
+
+  <script>
+    window.__DONNEES_RESEAU__ = {"debitMbps":487,"ip":"92.174.13.58","fai":"Free","localisation":"Paris"};
+    window.__QUESTIONS_PAR_SLUG__ = {"pourquoi-mon-internet-est-lent":"Pourquoi mon Internet est-il lent ?","mon-email-a-t-il-ete-pirate":"Mon email a-t-il été piraté ?","comment-trouver-mon-adresse-ip":"Comment trouver mon adresse IP ?","wifi-connecte-mais-pas-internet":"Wi-Fi connecté mais pas d'accès Internet : que faire ?","comment-scanner-un-qr-code":"Comment scanner un QR code ?","a-quoi-sert-un-vpn":"À quoi sert un VPN ?"};
+  </script>
+  <script src="assets/expert.js"></script>
+</body>
+</html>

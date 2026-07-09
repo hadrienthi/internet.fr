@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{q}} — {{site.nom}}</title>
+  <meta name="description" content="{{courte}}">
+  <link rel="canonical" href="https://internet.fr/{{slug}}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+  {{> bandeau-reseau}}
+  {{> entete}}
+
+  <article class="fiche">
+
+    <!-- Fil d'Ariane : Accueil > Questions > Thématique -->
+    <div class="ariane">
+      <a href="index.html">Accueil</a>
+      <span class="separateur">›</span>
+      <a href="index.html#questions">Questions</a>
+      <span class="separateur">›</span>
+      <a href="{{themeHref}}">{{theme}}</a>
+      <span class="badge-url">internet.fr/{{slug}}</span>
+    </div>
+
+    <!-- H1 : la question exacte de l'internaute -->
+    <h1>{{q}}</h1>
+
+    <!-- Réponse courte (format featured snippet) -->
+    <div class="reponse-courte">
+      <span class="etiquette">Réponse courte</span>
+      <p>{{courte}}</p>
+    </div>
+
+    <!-- Étapes aérées, puces numériques élégantes -->
+    <div class="etapes">
+      <!--BEGIN etape-->
+      <div class="etape">
+        <span class="numero">{{num}}</span>
+        <div class="contenu">
+          <h2>{{titre}}</h2>
+          <p>{{texte}}</p>
+        </div>
+      </div>
+      <!--END etape-->
+    </div>
+
+    <!-- Conclusion -->
+    <p class="conclusion">{{conclusion}}</p>
+
+    {{> cta-expert}}
+
+    <!-- Questions liées (maillage interne) -->
+    <div class="liees">
+      <h2>Questions liées</h2>
+      <div class="grille colonnes-3">
+        <!--BEGIN liee-->
+        <a class="carte" href="{{href}}" data-slug="{{slug}}">
+          <span class="question" style="font-size: 18px;">{{q}}</span>
+          <span class="url">/{{slug}}</span>
+        </a>
+        <!--END liee-->
+      </div>
+    </div>
+  </article>
+
+  {{> pied}}
+
+  <script src="assets/expert.js"></script>
+</body>
+</html>

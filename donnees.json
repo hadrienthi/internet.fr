@@ -1,0 +1,358 @@
+{
+  "site": {
+    "nom": "Internet.fr",
+    "baseline": "Toutes vos questions sur Internet. Une seule adresse.",
+    "reseau": {
+      "debitMbps": 487,
+      "ip": "92.174.13.58",
+      "fai": "Free",
+      "localisation": "Paris"
+    }
+  },
+  "fiches": {
+    "pourquoi-mon-internet-est-lent": {
+      "q": "Pourquoi mon Internet est-il lent ?",
+      "theme": "Débit & connexion",
+      "themeId": null,
+      "volume": "74 000 rech./mois",
+      "courte": "Dans 8 cas sur 10, la lenteur vient du Wi-Fi (distance, interférences) ou de la box — pas de votre ligne. Un test en filaire permet de trancher en 2 minutes.",
+      "steps": [
+        {
+          "titre": "Testez en filaire ou près de la box",
+          "texte": "Branchez un câble Ethernet ou rapprochez-vous à moins de 3 mètres de la box. Si le débit remonte nettement, le problème est le Wi-Fi, pas la connexion."
+        },
+        {
+          "titre": "Redémarrez la box 30 secondes",
+          "texte": "Débranchez l'alimentation, attendez 30 secondes, rebranchez. Cela résout la plupart des ralentissements liés à la mémoire ou à la surchauffe de la box."
+        },
+        {
+          "titre": "Cherchez l'appareil qui consomme",
+          "texte": "Un téléchargement, une sauvegarde cloud ou une mise à jour de console peut saturer la ligne. Coupez les appareils un par un pour identifier le coupable."
+        },
+        {
+          "titre": "Comparez au débit de votre offre",
+          "texte": "Lancez le test de débit d'Internet.fr et comparez le résultat au débit promis par votre abonnement. En dessous de 50 %, contactez votre opérateur."
+        }
+      ],
+      "conclusion": "Si le débit reste faible en filaire après redémarrage, le problème est sur la ligne ou chez l'opérateur : notez vos mesures (heure, débit, filaire/Wi-Fi) avant de contacter le service client — ou demandez à l'Expert de préparer le diagnostic avec vous.",
+      "liees": [
+        "wifi-connecte-mais-pas-internet",
+        "comment-trouver-mon-adresse-ip",
+        "a-quoi-sert-un-vpn"
+      ]
+    },
+    "mon-email-a-t-il-ete-pirate": {
+      "q": "Mon email a-t-il été piraté ?",
+      "theme": "Email",
+      "themeId": "email",
+      "volume": "41 000 rech./mois",
+      "courte": "Vérifiez si votre adresse figure dans une fuite de données connue, puis sécurisez le compte : mot de passe unique et double authentification. Ne saisissez jamais votre mot de passe ailleurs que sur le site officiel.",
+      "steps": [
+        {
+          "titre": "Vérifiez les fuites de données",
+          "texte": "Sur haveibeenpwned.com, entrez votre adresse email (jamais le mot de passe). Le site liste les fuites de données où elle apparaît."
+        },
+        {
+          "titre": "Changez le mot de passe immédiatement",
+          "texte": "Depuis le site officiel de votre messagerie, choisissez un mot de passe long et unique, jamais réutilisé sur un autre service."
+        },
+        {
+          "titre": "Activez la double authentification",
+          "texte": "Un code sur votre téléphone bloque 99 % des tentatives d'accès, même si le mot de passe a fuité."
+        },
+        {
+          "titre": "Inspectez règles et transferts",
+          "texte": "Les pirates créent souvent une règle de transfert discrète vers leur adresse. Vérifiez les paramètres de votre boîte et supprimez tout transfert inconnu."
+        }
+      ],
+      "conclusion": "Compte sécurisé ? Prévenez vos contacts si des messages sont partis à votre insu, et surveillez les connexions inhabituelles pendant quelques semaines. L'Expert peut vérifier chaque point avec vous, en direct.",
+      "liees": [
+        "pourquoi-mon-internet-est-lent",
+        "comment-scanner-un-qr-code",
+        "a-quoi-sert-un-vpn"
+      ]
+    },
+    "comment-trouver-mon-adresse-ip": {
+      "q": "Comment trouver mon adresse IP ?",
+      "theme": "Adresse IP",
+      "themeId": "adresse-ip",
+      "volume": "33 000 rech./mois",
+      "courte": "Votre IP publique s'affiche en un clic — elle est déjà visible dans le test de débit d'Internet.fr. L'IP locale, elle, se trouve dans les paramètres réseau de votre appareil.",
+      "steps": [
+        {
+          "titre": "IP publique : celle que voit Internet",
+          "texte": "Attribuée par votre opérateur, c'est l'adresse vue par les sites web. Elle s'affiche directement dans le widget Test de débit d'Internet.fr."
+        },
+        {
+          "titre": "IP locale sur ordinateur",
+          "texte": "Windows : Paramètres → Réseau et Internet → Propriétés. Mac : Réglages → Wi-Fi → Détails. Elle commence le plus souvent par 192.168."
+        },
+        {
+          "titre": "IP locale sur mobile",
+          "texte": "iPhone comme Android : Réglages → Wi-Fi → touchez le réseau auquel vous êtes connecté. L'adresse IP apparaît dans les détails."
+        },
+        {
+          "titre": "IPv4 ou IPv6 : les deux sont normales",
+          "texte": "92.174.13.58 est une IPv4 ; une forme longue avec des « : » est une IPv6. Les deux formats coexistent et fonctionnent en parallèle."
+        }
+      ],
+      "conclusion": "Publique pour le monde extérieur, locale pour votre réseau domestique : ce sont deux adresses différentes et c'est normal. Dites à l'Expert ce que vous cherchez à faire (ouvrir un port, configurer une caméra…) et il vous guide.",
+      "liees": [
+        "pourquoi-mon-internet-est-lent",
+        "a-quoi-sert-un-vpn",
+        "wifi-connecte-mais-pas-internet"
+      ]
+    },
+    "wifi-connecte-mais-pas-internet": {
+      "q": "Wi-Fi connecté mais pas d'accès Internet : que faire ?",
+      "theme": "Débit & connexion",
+      "themeId": null,
+      "volume": "27 000 rech./mois",
+      "courte": "Votre appareil parle bien à la box, mais la box n'accède plus au réseau. Le voyant « Internet » de la box dit presque tout.",
+      "steps": [
+        {
+          "titre": "Regardez le voyant « Internet » de la box",
+          "texte": "Vert ou blanc fixe : la ligne fonctionne, le problème vient de l'appareil. Rouge ou éteint : la box a perdu la connexion opérateur."
+        },
+        {
+          "titre": "Redémarrez la box 30 secondes",
+          "texte": "Débranchez, patientez 30 secondes, rebranchez. Attendez 2 à 3 minutes que tous les voyants se stabilisent."
+        },
+        {
+          "titre": "Testez avec un autre appareil",
+          "texte": "Si un second appareil accède à Internet, le problème est local : oubliez le réseau Wi-Fi sur l'appareil en panne, puis reconnectez-vous."
+        },
+        {
+          "titre": "Vérifiez l'état du réseau opérateur",
+          "texte": "Si le voyant reste rouge, consultez la page « état du réseau » de votre opérateur depuis votre mobile en 4G, ou appelez le service client."
+        }
+      ],
+      "conclusion": "Dans la grande majorité des cas, le redémarrage de la box suffit. Si la panne revient régulièrement, décrivez le rythme des coupures à l'Expert : c'est souvent le signe d'un problème de ligne à faire constater.",
+      "liees": [
+        "pourquoi-mon-internet-est-lent",
+        "comment-trouver-mon-adresse-ip",
+        "mon-email-a-t-il-ete-pirate"
+      ]
+    },
+    "comment-scanner-un-qr-code": {
+      "q": "Comment scanner un QR code ?",
+      "theme": "QR code",
+      "themeId": "qr-code",
+      "volume": "90 500 rech./mois",
+      "courte": "Ouvrez simplement l'appareil photo de votre téléphone et visez le code : aucune application n'est nécessaire sur les téléphones récents.",
+      "steps": [
+        {
+          "titre": "Ouvrez l'appareil photo",
+          "texte": "iPhone comme Android : cadrez le QR code avec l'appareil photo natif. Une notification apparaît en haut de l'écran — touchez-la."
+        },
+        {
+          "titre": "Rien ne s'affiche ? Activez l'option",
+          "texte": "Android : dans les réglages de l'appareil photo, activez « Scanner les QR codes ». Sinon, Google Lens fait le travail."
+        },
+        {
+          "titre": "Vérifiez l'URL avant d'ouvrir",
+          "texte": "Lisez le lien proposé dans la notification : le domaine juste avant le premier « / » doit correspondre au site attendu. Au moindre doute, ne l'ouvrez pas."
+        },
+        {
+          "titre": "Méfiez-vous des QR codes collés",
+          "texte": "Sur les parkings ou les bornes, des fraudeurs collent leurs propres codes par-dessus les originaux (« quishing »). Un autocollant récent est un signal d'alerte."
+        }
+      ],
+      "conclusion": "Scanner est devenu un geste natif — le vrai réflexe à acquérir est la vérification du lien avant d'ouvrir. Un doute sur un QR code précis ? Décrivez-le à l'Expert.",
+      "liees": [
+        "mon-email-a-t-il-ete-pirate",
+        "a-quoi-sert-un-vpn",
+        "pourquoi-mon-internet-est-lent"
+      ]
+    },
+    "a-quoi-sert-un-vpn": {
+      "q": "À quoi sert un VPN ?",
+      "theme": "VPN",
+      "themeId": "vpn",
+      "volume": "60 000 rech./mois",
+      "courte": "Un VPN chiffre votre connexion et masque votre adresse IP. Utile sur les Wi-Fi publics et pour la confidentialité — mais il ne rend pas anonyme et ne remplace pas un antivirus.",
+      "steps": [
+        {
+          "titre": "Chiffrer votre trafic",
+          "texte": "Sur un Wi-Fi public (gare, hôtel, café), le VPN crée un tunnel chiffré : personne sur le réseau ne peut lire ce que vous envoyez."
+        },
+        {
+          "titre": "Masquer votre adresse IP",
+          "texte": "Les sites voient l'adresse du serveur VPN, pas la vôtre. Votre localisation apparente change avec le serveur choisi."
+        },
+        {
+          "titre": "Connaître ses limites",
+          "texte": "Un VPN ne bloque ni les virus, ni le phishing, ni les traqueurs des sites où vous êtes connecté. Ce n'est pas un outil d'anonymat absolu."
+        },
+        {
+          "titre": "Bien le choisir",
+          "texte": "Privilégiez un fournisseur qui publie des audits indépendants de sa politique « zéro journal ». Gratuit sans modèle économique clair = vos données sont le produit."
+        }
+      ],
+      "conclusion": "Le VPN est un bon outil de confidentialité pour des usages précis, pas une armure universelle. Expliquez votre usage à l'Expert (voyage, télétravail, streaming) pour un conseil adapté.",
+      "liees": [
+        "comment-trouver-mon-adresse-ip",
+        "mon-email-a-t-il-ete-pirate",
+        "pourquoi-mon-internet-est-lent"
+      ]
+    }
+  },
+  "themes": {
+    "email": {
+      "titre": "Email",
+      "h1": "Tout comprendre sur l'email",
+      "slug": "/email",
+      "stat": "620 questions couvertes",
+      "intro": "L'email reste la clé de voûte de votre vie en ligne : c'est lui qui déverrouille tous vos autres comptes. Piratage, spam, messages qui n'arrivent pas, configuration — ce dossier rassemble les réponses aux questions les plus posées, en langage clair. Et pour tout le reste, l'Expert répond en direct.",
+      "sujets": [
+        {
+          "titre": "Mon email a-t-il été piraté ?",
+          "slug": "mon-email-a-t-il-ete-pirate",
+          "desc": "Fuites de données, mots de passe, double authentification."
+        },
+        {
+          "titre": "Pourquoi mes emails arrivent en spam ?",
+          "slug": null,
+          "desc": "Réputation, contenu, authentification des envois."
+        },
+        {
+          "titre": "SPF, DKIM et DMARC expliqués",
+          "slug": null,
+          "desc": "Les trois tampons d'authenticité de vos envois."
+        },
+        {
+          "titre": "Créer une adresse email professionnelle",
+          "slug": null,
+          "desc": "Nom de domaine, hébergeur de messagerie, alias."
+        },
+        {
+          "titre": "Récupérer un compte email piraté",
+          "slug": null,
+          "desc": "Procédures officielles Gmail, Outlook, Orange, Free."
+        },
+        {
+          "titre": "Changer d'adresse email sans rien perdre",
+          "slug": null,
+          "desc": "Transfert, réponse automatique, migration des comptes."
+        }
+      ]
+    },
+    "qr-code": {
+      "titre": "QR code",
+      "h1": "Tout comprendre sur le QR code",
+      "slug": "/qr-code",
+      "stat": "540 questions couvertes",
+      "intro": "Menu de restaurant, billet de train, borne de parking : le QR code est partout depuis 2020. Scanner, créer, vérifier qu'un code n'est pas piégé — voici l'essentiel, sans jargon. Pour un cas particulier, l'Expert analyse la situation avec vous.",
+      "sujets": [
+        {
+          "titre": "Comment scanner un QR code ?",
+          "slug": "comment-scanner-un-qr-code",
+          "desc": "Avec l'appareil photo natif, sans application."
+        },
+        {
+          "titre": "Créer un QR code gratuitement",
+          "slug": null,
+          "desc": "Générateurs fiables, formats, impression."
+        },
+        {
+          "titre": "Ce QR code est-il dangereux ?",
+          "slug": null,
+          "desc": "Vérifier l'URL, repérer les codes collés par-dessus."
+        },
+        {
+          "titre": "Mon QR code ne fonctionne pas",
+          "slug": null,
+          "desc": "Taille, contraste, lien expiré : le diagnostic."
+        },
+        {
+          "titre": "Lire un QR code depuis une capture d'écran",
+          "slug": null,
+          "desc": "Google Lens, galerie photo, sans second téléphone."
+        },
+        {
+          "titre": "Partager son Wi-Fi par QR code",
+          "slug": null,
+          "desc": "Générer le code de connexion depuis son téléphone."
+        }
+      ]
+    },
+    "vpn": {
+      "titre": "VPN",
+      "h1": "Tout comprendre sur le VPN",
+      "slug": "/vpn",
+      "stat": "480 questions couvertes",
+      "intro": "Trois lettres omniprésentes dans les publicités, rarement bien expliquées. Un VPN chiffre votre connexion et masque votre adresse IP — c'est utile, mais pas magique. Ce dossier sépare ce qu'un VPN fait vraiment de ce qu'on vous promet, et l'Expert répond à votre cas précis.",
+      "sujets": [
+        {
+          "titre": "À quoi sert un VPN ?",
+          "slug": "a-quoi-sert-un-vpn",
+          "desc": "Chiffrement, IP masquée, limites réelles."
+        },
+        {
+          "titre": "Comment choisir son VPN ?",
+          "slug": null,
+          "desc": "Audits, juridiction, vitesse, prix."
+        },
+        {
+          "titre": "Les VPN gratuits sont-ils fiables ?",
+          "slug": null,
+          "desc": "Modèle économique, revente de données."
+        },
+        {
+          "titre": "Installer un VPN sur tous ses appareils",
+          "slug": null,
+          "desc": "Ordinateur, mobile, box, téléviseur."
+        },
+        {
+          "titre": "Le VPN ralentit-il la connexion ?",
+          "slug": null,
+          "desc": "Distance du serveur, protocole, ordres de grandeur."
+        },
+        {
+          "titre": "VPN et streaming : que dit la loi ?",
+          "slug": null,
+          "desc": "Géoblocage, conditions des plateformes, légalité."
+        }
+      ]
+    },
+    "adresse-ip": {
+      "titre": "Adresse IP",
+      "h1": "Tout comprendre sur l'adresse IP",
+      "slug": "/adresse-ip",
+      "stat": "410 questions couvertes",
+      "intro": "C'est votre adresse postale sur le réseau : sans elle, aucune page ne saurait où revenir. Publique ou locale, fixe ou dynamique, IPv4 ou IPv6 — ce dossier démêle les notions une bonne fois pour toutes. Pour une manipulation précise, demandez à l'Expert.",
+      "sujets": [
+        {
+          "titre": "Comment trouver mon adresse IP ?",
+          "slug": "comment-trouver-mon-adresse-ip",
+          "desc": "Publique, locale, sur ordinateur et mobile."
+        },
+        {
+          "titre": "IP fixe ou dynamique : quelle différence ?",
+          "slug": null,
+          "desc": "Attribution par l'opérateur, cas d'usage."
+        },
+        {
+          "titre": "Comment masquer mon adresse IP ?",
+          "slug": null,
+          "desc": "VPN, proxy, ce qui est réellement caché."
+        },
+        {
+          "titre": "IPv4 vs IPv6",
+          "slug": null,
+          "desc": "Deux formats qui coexistent, pourquoi."
+        },
+        {
+          "titre": "Que peut-on faire avec mon adresse IP ?",
+          "slug": null,
+          "desc": "Risques réels vs fantasmes, géolocalisation approximative."
+        },
+        {
+          "titre": "Changer son adresse IP",
+          "slug": null,
+          "desc": "Redémarrage de box, VPN, demande opérateur."
+        }
+      ]
+    }
+  }
+}

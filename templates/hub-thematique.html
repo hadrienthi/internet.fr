@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{h1}} — {{site.nom}}</title>
+  <meta name="description" content="{{intro}}">
+  <link rel="canonical" href="https://internet.fr{{slug}}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+  {{> bandeau-reseau}}
+  {{> entete}}
+
+  <section class="hub">
+
+    <!-- Fil d'Ariane -->
+    <div class="ariane">
+      <a href="index.html">Accueil</a>
+      <span class="separateur">›</span>
+      <a href="index.html#dossiers">Dossiers</a>
+      <span class="badge-url">internet.fr{{slug}}</span>
+      <span class="badge-stat">{{stat}}</span>
+    </div>
+
+    <!-- H1 + introduction vulgarisée -->
+    <h1>{{h1}}</h1>
+    <p class="intro">{{intro}}</p>
+
+    <!-- Mini-grille locale : uniquement les questions de CETTE thématique -->
+    <h2>Les questions {{adjectif}}</h2>
+    <div class="grille colonnes-2">
+      <!--BEGIN sujet-->
+      <a class="carte" href="{{href}}" data-slug="{{dataSlug}}">
+        <span class="question" style="font-size: 21px;">{{titre}}</span>
+        <span class="description">{{desc}}</span>
+        <span class="url {{urlClasse}}">{{tag}}</span>
+      </a>
+      <!--END sujet-->
+    </div>
+
+    <!-- Accès direct au chat de l'Expert, dédié à la thématique -->
+    <div class="carte-chat">
+      <div class="barre">
+        <div class="gauche">
+          <div class="avatar"><span></span><span></span></div>
+          <span class="nom">L'Expert — spécial {{titre}}</span>
+        </div>
+        <span class="session">session sécurisée · IA spécialisée</span>
+      </div>
+      <div class="saisie" style="padding-top: 22px;">
+        <div class="ligne-saisie">
+          <input id="hub-question" type="text" placeholder="Votre question sur le sujet « {{titreMinuscule}} »…">
+          <button class="bouton-bleu" id="hub-envoyer">Poser ma question</button>
+        </div>
+        <div class="puces">
+          <!--BEGIN suggestion-->
+          <button class="puce" data-hub-suggestion>{{titre}}</button>
+          <!--END suggestion-->
+        </div>
+        <p class="avertissement">Votre question s'ouvre dans le chat principal de l'Expert, pré-remplie et lancée automatiquement.</p>
+      </div>
+    </div>
+  </section>
+
+  {{> pied}}
+
+  <script src="assets/expert.js"></script>
+  <script>
+    (function () {
+      var champ = document.getElementById('hub-question');
+      var bouton = document.getElementById('hub-envoyer');
+      function envoyer(q) {
+        if (!q || !q.trim()) return;
+        window.location.href = 'index.html?q=' + encodeURIComponent(q);
+      }
+      bouton.addEventListener('click', function () { envoyer(champ.value); });
+      champ.addEventListener('keydown', function (e) { if (e.key === 'Enter') envoyer(champ.value); });
+      document.querySelectorAll('[data-hub-suggestion]').forEach(function (b) {
+        b.addEventListener('click', function () { envoyer(b.textContent); });
+      });
+    })();
+  </script>
+</body>
+</html>
